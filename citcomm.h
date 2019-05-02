@@ -2,7 +2,7 @@
 #define CITCOMM_H 
 
 enum Cmd {
-  ONLINE,
+  REQUEST,
   PROMISE,
   COMMIT
 };
@@ -11,6 +11,7 @@ struct Payload {
   enum Cmd cmd;
   unsigned long int node_id;
   unsigned long int msg_id;
+  unsigned long int dest_id;
 };
 
 int client_send(struct Payload payload);

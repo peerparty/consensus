@@ -52,7 +52,7 @@ int client_send(struct Payload payload) {
 
 int server_listen(void(*handle_payload)(struct Payload)) {
 
-  printf("listening...\n"); 
+  printf("I'm listening...\n"); 
 
   struct sockaddr_in addr;
   int fd, nbytes,addrlen;
