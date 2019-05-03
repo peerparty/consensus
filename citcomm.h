@@ -2,8 +2,9 @@
 #define CITCOMM_H 
 
 enum Cmd {
-  REQUEST,
+  PROMISE_REQ,
   PROMISE,
+  COMMIT_REQ,
   COMMIT
 };
 
